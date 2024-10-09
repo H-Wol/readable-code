@@ -36,13 +36,12 @@ public class EmptyCell implements Cell {
 
     @Override
     public boolean isOpened() {
-
         return cellState.isOpened();
     }
 
     @Override
     public boolean isChecked() {
-        return cellState.isChecked();
+        return cellState.isOpened();
     }
 
 }
