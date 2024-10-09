@@ -41,4 +41,7 @@ public class StudyCafeLockerPass {
         return "";
     }
 
+    public boolean isSelectedLockerPass(StudyCafePass selectedPass) {
+        return passType.equals(selectedPass.getPassType()) && duration == selectedPass.getDuration();
+    }
 }
